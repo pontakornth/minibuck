@@ -5,10 +5,10 @@
 </template>
 
 <script lang="ts">
-import { ref } from 'vue';
+import { ref, defineComponent } from 'vue';
 import LoginForm from '../components/LoginForm.vue';
 
-export default {
+export default defineComponent({
   setup() {
     const email = ref('');
     const password = ref('');
@@ -20,5 +20,5 @@ export default {
   components: {
     LoginForm,
   },
-};
+});
 </script>

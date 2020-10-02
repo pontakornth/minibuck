@@ -10,14 +10,14 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue';
 // This is for practicing composition API
-// TODO: Update the type to actual type
-export default {
+export default defineComponent({
   props: {
     email: String,
     password: String,
   },
-  setup(props: any, { emit }: any) {
+  setup(props, { emit }) {
     const updateEmail = (e: any) => {
       emit('update:email', e.target.value);
     };
@@ -29,5 +29,5 @@ export default {
       updatePassword,
     };
   },
-};
+});
 </script>
