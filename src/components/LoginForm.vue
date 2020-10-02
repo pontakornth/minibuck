@@ -6,16 +6,19 @@
       <label for="password">Password</label>
       <input name="password" id="password" type="password" :value="password"
           @input="updatePassword" />
+      <input type="submit" value="Login" class="button" />
   </form>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 // This is for practicing composition API
+// TOOD: Add proper type for event
 export default defineComponent({
   props: {
     email: String,
     password: String,
+    onSubmit: Function,
   },
   setup(props, { emit }) {
     const updateEmail = (e: any) => {
