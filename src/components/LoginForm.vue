@@ -34,3 +34,24 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="stylus" scoped>
+.login-form
+  display flex
+  flex-flow column wrap
+  text-align left
+  align-items flex-start
+  justify-content flex-start
+  margin auto
+  width 80%
+  *
+    margin-top: .5rem
+    display block
+  label
+    font-size 1.5rem
+  input
+    font-size 1.3rem
+.button
+  margin-top 1rem
+  width unset
+</style>

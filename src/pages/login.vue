@@ -29,3 +29,9 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="stylus">
+.login
+  display flex
+  justify-content center
+</style>
