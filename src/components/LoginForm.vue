@@ -1,5 +1,5 @@
 <template>
-  <form class="login-form">
+  <form class="login-form" @submit.prevent="onSubmit">
       <h1>Login</h1>
       <label for="email">Email</label>
       <input name="email" id="email" type="email" :value="email" @input="updateEmail"/>
