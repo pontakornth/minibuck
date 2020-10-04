@@ -34,4 +34,5 @@ export default defineComponent({
 .login
   display flex
   justify-content center
+  padding-top 3rem
 </style>
